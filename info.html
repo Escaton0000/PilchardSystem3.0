@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<head>
+    <meta charset="UTF-8">
+    <title>PilchardSystem</title>
+</head>
+<style>
+    h1,h2,h3,h4,h5,h6,p{
+        color:azure;
+    }
+</style>
+<body>
+    <h1> PilchardSystem </h1>
+    <form method="post" action="/back">
+        <button type="submit" style = "border-radius: 8px; margin-bottom:20px; padding:5px;font-size:17px" >돌아가기</button>
+    </form>
+    <p> 끝말잇기 봇</p>
+    <p> - 오류 발생 시 브라우저 쿠키를 지우고 다시 시도해보세요! </p><br><br>
+
+    <h1>두음 법칙</h1>
+    <h3>받침에 관계없이, 초성이 'ㄹ' 일 때</h3>
+    <p>모음이 반모음 ㅣ계 모음이라면: 초성 'ㅇ' 로 교체 가능</p>
+    <p>모음이 반모음 ㅣ계 모음이 아니라면: 초성 'ㄴ' 로 교체 가능</p><br><br>
+
+
+    <h3>받침에 관계없이, 초성이 'ㄴ' 일 때</h3>
+    <p>모음이 반모음 y계 모음이라면: 초성 'ㅇ' 로 교체 가능</p>
+    <p>모음이 반모음 y계 모음이 아니라면: 초성 유지</p>
+</body>

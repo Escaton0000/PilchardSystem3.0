@@ -1,0 +1,70 @@
+/* 메시지 전체 영역 */
+.messages {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    height: 70vh;
+    overflow-y: auto;
+
+    padding-bottom: 50px;
+}
+
+
+
+/* 공통 말풍선 */
+.blue-box,
+.red-box {
+    max-width: 70%;
+    padding: 8px 12px;
+    border-radius: 12px;
+    word-break: break-word;
+}
+
+/* 봇 (왼쪽) */
+.blue-box {
+    align-self: flex-start;
+    background-color: #f8d7da;
+}
+
+/* 플레이어 (오른쪽) */
+.red-box {
+    align-self: flex-end;
+    background-color: #cce5ff;
+}
+
+.inputarea {
+    display: flex;
+    gap: 8px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #55554c;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.chat-input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid #666662;
+    font-size: 14px;
+    background-color:#d4d4c7
+}
+
+.send {
+    padding: 8px 14px;
+    border: none;
+    border-radius: 16px;
+    background-color: #ff6b6b;
+    color: white;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+
+body {
+background-color: rgb(34, 35, 29); /* 웹 문서 전체 배경색 */
+}

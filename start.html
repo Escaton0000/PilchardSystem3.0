@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<head>
+    <meta charset="UTF-8">
+    <title>PilchardSystem3</title>
+</head>
+<style>
+    h1{
+        color:rgb(211, 242, 241)
+    }
+    .botnn{
+         border-radius: 8px;
+         margin-bottom:20px;
+         padding:5px;
+         font-size:17px;
+         display: inline;
+    }
+</style>
+<body>
+    <h1>PilchardSystem</h1>
+    <form method="POST" action="/start" style="display:inline;">
+        <button type="submit" class = "botnn">돌아가기</button>
+
+    <form method="POST" class="inputarea" autocomplete="off">
+        <input type="text" name="text" class="chat-input">
+        <button type="submit" class="send">입력</button>
+    </form>   
+    </body>
+</html>
+
